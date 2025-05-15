@@ -67,6 +67,7 @@ body {
 
 .is-active {
   color: var(--link-color);
+  position: relative; /* <- Isso aqui é ESSENCIAL */
 }
 
 .is-active::after {
@@ -75,8 +76,8 @@ body {
   background-color: var(--link-color);
   height: 4px;
   border-radius: 8px;
-  position: relative;
+  position: absolute; /* <- Isso aqui muda tudo */
   width: 100%;
-  bottom: 4px;
+  bottom: 0;
   left: 0;
 }
